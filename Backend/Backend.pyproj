@@ -59,6 +59,9 @@
     <Compile Include="Backend\settings.py" />
     <Compile Include="Backend\urls.py" />
     <Compile Include="Backend\wsgi.py" />
+    <Compile Include="Procfile">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="second\admin.py" />
     <Compile Include="second\apps.py" />
     <Compile Include="second\migrations\__init__.py" />

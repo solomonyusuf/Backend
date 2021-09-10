@@ -25,7 +25,7 @@ SECRET_KEY = '8596cd61-8125-4871-bb72-14159cca9953'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['backendpip.herokuapp.com']
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'app',
     # Add your apps here to enable them
     'rest_framework',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
