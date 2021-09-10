@@ -19,4 +19,12 @@ class Products(models.Model):
     description=models.CharField(max_length=2000)
     date=models.DateTimeField()
     productcode=models.CharField(null=True, max_length=225)
+
+class Orders(models.Model):
+    name=models.CharField(max_length=225)
+    productcode=models.CharField(null=True, max_length=225)
+    gmail=models.CharField(null=True, max_length=225)
+    address=models.CharField(null=True, max_length=225)
+    phonenumber=models.CharField(null=True, max_length=225)
+    date=models.DateTimeField()
    

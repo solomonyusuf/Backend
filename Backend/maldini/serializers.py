@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Contact, News, Products
+from .models import Contact, News, Products,Orders
 
 class MaldiniContactSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -16,3 +16,8 @@ class MaldiniProductSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Products
         fields = ('id','image', 'name','description','date')
+
+class MaldiniOrdersSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Orders
+        fields = ('id','name','productcode', 'gmail','address','phonenumber','date')
